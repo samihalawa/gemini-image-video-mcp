@@ -1,0 +1,60 @@
+{
+  "name": "gemini-ai-server",
+  "version": "1.0.0",
+  "description": "Comprehensive Gemini AI MCP Server with image and video generation capabilities for smithery.ai",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "gemini-ai-server": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch && node dist/index.js",
+    "test": "echo \"Running MCP server tests...\" && node dist/test-runner.js",
+    "lint": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "modelcontextprotocol",
+    "gemini",
+    "ai",
+    "image-generation",
+    "video-generation",
+    "smithery",
+    "typescript"
+  ],
+  "author": "MiniMax Agent",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samihalawa/gemini-image-video-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samihalawa/gemini-image-video-mcp/issues"
+  },
+  "homepage": "https://github.com/samihalawa/gemini-image-video-mcp#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "@google/generative-ai": "^0.21.0",
+    "zod": "^3.25.76",
+    "chalk": "^5.3.0",
+    "axios": "^1.7.9",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/uuid": "^10.0.0",
+    "typescript": "^5.7.2"
+  }
+}
