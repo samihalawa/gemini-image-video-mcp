@@ -1,0 +1,19 @@
+{
+  "name": "agent_generated_gemini_ai_server",
+  "exhibit_name": "Gemini AI Server",
+  "type": 3,
+  "command": "sh /app/run.sh",
+  "args": [],
+  "env": {},
+  "description": "Comprehensive Gemini AI MCP Server with advanced image and video generation capabilities. Features Nano Banana and Imagen models for image generation, Veo 3.1 for video creation, image-to-video conversion, batch processing, text generation, and image analysis. Built for smithery.ai deployment with full TypeScript implementation.",
+  "description_for_agent": "Complete Gemini AI integration with tools for image generation (Nano Banana, Imagen 3/4), video generation (Veo 3.1), image-to-video conversion, batch operations, text generation, and image analysis. Supports multiple aspect ratios, styles, and resolution options.",
+  "user_params": {
+    "args": {},
+    "env": {
+      "GEMINI_API_KEY": {
+        "required": true,
+        "description": "Google Gemini API key for accessing AI models. Get your key from https://ai.google.dev/ and set it as an environment variable. This key enables access to all Gemini AI capabilities including image generation, video creation, and text processing."
+      }
+    }
+  }
+}
